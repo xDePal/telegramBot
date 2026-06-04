@@ -1,0 +1,45 @@
+# Виртуальное окружение (uv, poetry, venv)
+.venv/
+venv/
+env/
+
+# Python-кэш
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Артефакты сборки и дистрибуции
+build/
+dist/
+*.egg-info/
+*.egg
+*.so
+
+# Файлы блокировки версий (РЕКОМЕНДУЕТСЯ КОММИТИТЬ для приложений)
+# uv.lock
+# poetry.lock
+
+# Отчеты о тестировании и покрытии
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Файлы IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Файлы с окружением и секретами
+.env
+.env.local
+.env.*.local
+*.log
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
