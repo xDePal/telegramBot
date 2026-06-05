@@ -2,6 +2,8 @@
 .venv/
 venv/
 env/
+myenv/
+.myenv
 .env
 
 # Python-кэш
@@ -44,3 +46,8 @@ htmlcov/
 # Файлы операционной системы
 .DS_Store
 Thumbs.db
+
+uv.lock/
+
+
+data/

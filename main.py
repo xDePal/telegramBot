@@ -1,5 +1,10 @@
+from tg_bot import run_bot
+
+
 def main():
-    print("Hello from telegram-bot!")
+    # Start the bot
+    run_bot()
+
 
 
 if __name__ == "__main__":
