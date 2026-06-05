@@ -46,3 +46,4 @@ uv.lock/
 data/
 .gitignore
 .python-version
+.ipynb_checkpoints
