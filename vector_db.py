@@ -8,6 +8,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 embeddings = HuggingFaceEmbeddings(
     model_name="intfloat/multilingual-e5-base",
+    model_kwargs={"device": "cuda"},
     encode_kwargs={"normalize_embeddings": True}
 )
 
