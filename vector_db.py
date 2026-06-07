@@ -12,32 +12,14 @@ embeddings = HuggingFaceEmbeddings(
 )
 
 
-docs = []
-with open("data/merged.jsonl", "r", encoding="utf-8") as f:
-    for line in f:
-        docs.append(json.loads(line))
+with open("data/output.md", "r", encoding="utf-8") as f:
+    raw_text = f.read()
 
-# Convert to doc object
-documents = []
+# Wrap the whole text in a single Document — no metadata needed
+documents = [Document(page_content=raw_text)]
 
-for d in docs:
-    metadata = {}
+print(f"Total characters: {len(raw_text)}")
 
-    for key in [
-        "id", "source", "url", "name", "sku",
-        "category", "subcategory",
-        "price_current_kzt", "currency",
-        "stock_almaty", "stock_astana"
-    ]:
-        if key in d and d[key] is not None:
-            metadata[key] = d[key]
-
-    documents.append(
-        Document(
-            page_content=d["text"],
-            metadata=metadata
-        )
-    )
 
 # Chunking
 text_splitter = RecursiveCharacterTextSplitter(
