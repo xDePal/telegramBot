@@ -12,7 +12,7 @@ AI-ассистент для Центр красок №1
 • ChromaDB — векторная база данных для семантического поиска
 • HuggingFace (intfloat/multilingual-e5-base) — многоязычные эмбеддинги (локальная модель)
 • python-telegram-bot — интеграция с Telegram
-• Guardrails - с помощью system prompt injection
+• Guardrails - с помощью system prompt
 
 
 ## Архитектура:
