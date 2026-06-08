@@ -12,7 +12,7 @@ vectorstore = Chroma(
 )
 
 def search(query: str) -> str:
-    results = vectorstore.similarity_search(query, k=3)
+    results = vectorstore.similarity_search(query, k=5)
     
     context = ""
     for i, doc in enumerate(results, 1):
