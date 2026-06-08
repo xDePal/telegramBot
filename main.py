@@ -28,7 +28,7 @@ def main():
     #bot_thread.start()
 
     # Test query directly
-    answer = ask("какие есть вакансии?")
+    answer = ask("чем занимается компания?")
     print(answer)
 
     # Keep main thread alive for the bot
