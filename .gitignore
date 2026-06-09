@@ -42,8 +42,7 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-uv.lock/
-data/
+uv.lock
 .gitignore
 .python-version
 .ipynb_checkpoints
