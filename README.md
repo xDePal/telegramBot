@@ -3,7 +3,7 @@ The bot delivers instant, accurate answers to customer inquiries about the compa
 Link to the site of retail chain: https://centr-krasok.kz/?srsltid=AfmBOop5yL6zIbMUETuLVNaz8FBB7sE83TC4GBjazXBmG0dqCE2kHZYq
 
 ## Tech stack:
-Python — core development language
+- Python — core development language
 LangChain — LLM pipeline orchestration
 Groq API + Qwen3-32B — blazing-fast LLM inference
 ChromaDB — vector database for semantic search
